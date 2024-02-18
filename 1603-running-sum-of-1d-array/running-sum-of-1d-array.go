@@ -1,9 +1,6 @@
 func runningSum(nums []int) []int {
-    var ans []int = make([]int, 0);
-    preSum := 0;
-    for _, num := range nums{
-        preSum += num;
-        ans = append(ans, preSum);
+    for i := 1 ; i < len(nums); i++ {
+        nums[i] = (nums[i] + nums[i-1]);
     }
-    return ans;
+    return nums;
 }
