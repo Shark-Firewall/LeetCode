@@ -7,6 +7,7 @@ func numJewelsInStones(jewels string, stones string) int {
     for _, i := range stones {
         _ , tmp := umap[i]
         if tmp{
+            umap[i]++;
             count++;
         }
     }
