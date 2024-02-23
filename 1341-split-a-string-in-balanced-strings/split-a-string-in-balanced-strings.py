@@ -5,9 +5,10 @@ class Solution:
         for word in s:
             if word == 'R':
                 Bal += 1;
-            elif word == 'L':
+            else:
                 Bal -= 1;
             if Bal == 0:
                 count += 1;
+
         return count;
         
